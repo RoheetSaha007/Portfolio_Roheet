@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Roheet Saha Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="particles" id="particles-js"></div>
+  <div class="cyber-grid"></div>
+  
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </button>
+    <nav class="navbar" id="navbar">
+      <a href="#Home" class="nav-link"><span class="link-text">Home</span><span class="link-hover"></span></a>
+      <a href="#" class="nav-link" onclick="openAbout()"><span class="link-text">About</span><span class="link-hover"></span></a>
+      <a href="#" class="nav-link" onclick="openServicesPopup()"><span class="link-text">Services</span><span class="link-hover"></span></a>
+      <a href="#" class="nav-link" onclick="openWorkPopup()"><span class="link-text">Work</span><span class="link-hover"></span></a>
+      <a href="#" class="nav-link" onclick="openContact()"><span class="link-text">Contact</span><span class="link-hover"></span></a>
+    </nav>
+  </header>
+
+  <section class="home" id="Home">
+    <div class="home-content">
+      <h3 class="animate-top hello-text">Hello, I'm</h3>
+      <h1 id="typing" class="typing-effect-once"></h1>
+      <h4 class="animate-right">Electronics Engineer & Web Developer</h4>
+      <p class="animate-bottom long-text">
+        Focused on embedded systems, IoT solutions, cloud infrastructure, and modern communication technologies.
+      </p>
+      <div class="social-media animate-zoom">
+        <a href="https://www.instagram.com/roheet_r9/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+          <span class="pulse-ring"></span>
+        </a>
+        <a href="https://www.facebook.com/roheet.saha.142" target="_blank" class="social-icon">
+          <i class="fab fa-facebook"></i>
+          <span class="pulse-ring"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/roheetsaha7/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+          <span class="pulse-ring"></span>
+        </a>
+        <a href="https://github.com/RoheetSaha007" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+          <span class="pulse-ring"></span>
+        </a>
+      </div>
+      <a href="https://drive.google.com/file/d/1Tdq4vLhWEFWH-3uCMjS8f9tN2G4PDkpV/view?usp=drivesdk" class="btn animate-pop" target="_blank" rel="noopener noreferrer">
+  <span>Download CV</span>
+  <div class="btn-border btn-border-top"></div>
+  <div class="btn-border btn-border-right"></div>
+  <div class="btn-border btn-border-bottom"></div>
+  <div class="btn-border btn-border-left"></div>
+</a>
+
+         </div>
+    <div class="home-img-wrapper">
+      <div class="home-img">
+        <div class="hexagon-border"></div>
+        <div class="hexagon-border hexagon-border-2"></div>
+        <img src="Profile photo.jpg" alt="Roheet Profile" class="profile-img" />
+        <div class="glowing-circle"></div>
+      </div>
+    </div>
+  </section>
+
+ <div id="servicesPopup" class="services-popup">
+  <div class="services-popup-content">
+    <span class="close-btn" onclick="closeServicesPopup()">&times;</span>
+    <h2 class="services-title">💼 Services I Offer</h2>
+
+    <div class="service-item">
+      <h3>🛠️ Full Stack Project Development</h3>
+      <p>End-to-end project solutions from front-end design to GitHub deployment with clean code architecture.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>☁️ AWS Cloud Deployment</h3>
+      <p>Hosting and managing projects with services like S3, EC2, DynamoDB, IAM, and more.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>🔧 IoT & Embedded Systems</h3>
+      <p>Developing smart systems using Arduino, NodeMCU, sensors — ideal for real-world automation and mini-projects.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>📊 MATLAB & Signal Processing</h3>
+      <p>Numerical analysis, signal modeling, Z-transforms, and custom simulations in MATLAB for engineering research.</p>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="tech-stack">
+      <h3 class="tech-stack-title">🛠️ Tools & Technologies I Use</h3>
+      <div class="tech-icons">
+        <!-- Web Development -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tool-html">
+          <span>HTML5</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tool-css">
+          <span>CSS3</span>
+        </div>
+        <!-- Cloud & Backend -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="tool-github">
+          <span>GitHub</span>
+        </div>
+        <!-- IoT & Embedded -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="tool-arduino">
+          <span>Arduino</span>
+        </div>
+        <!-- Engineering Tools -->
+        <div class="tech-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" class="tool-matlab">
+          <span>MATLAB</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tool-java">
+          <span>Java</span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Work Showcase Popup -->
+  <div id="workPopup" class="work-popup">
+    <div class="work-popup-content">
+      <span class="close-btn" onclick="closeWorkPopup()">&times;</span>
+      <h2 class="work-title">💼 My Project Showcase</h2>
+      <div class="project-gallery">
+        
+        <a href="https://roheetsaha007.github.io/TIC_TAC_TOE--PROGIDY_03/" target="_blank" class="project-card">
+          <img src="tic.jpg" alt="Tic Tac Toe">
+          <p>Tic‑Tac‑Toe</p>
+        </a>
+        
+        <a href="https://roheetsaha007.github.io/PROJECT_STOPWATCH--PRODIGY_02/" target="_blank" class="project-card">
+          <img src="stop.jpg" alt="Digital Stopwatch">
+          <p>Digital Stopwatch</p>
+        </a>
+        
+        <a href="https://roheetsaha007.github.io/WEATHER--PROGIDY_05/" target="_blank" class="project-card">
+          <img src="weatehr.jpg" alt="Weather Application">
+          <p>Weather Application</p>
+        </a>
+        
+        <a href="https://roheetsaha007.github.io/PROJECT_LANDING--PRODIGY_01/land" target="_blank" class="project-card">
+          <img src="land.jpg" alt="Landing Page">
+          <p>Landing Page</p>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/roheetsaha7_radarsystem-aeroscan-arduinoproject-activity-7342849743464632320-yotE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEWNgnoB7gRxSHKET1uErmNh-8iDYZRF93k" target="_blank" class="project-card">
+          <img src="radar.jpg" alt="Radar Arduino Project">
+          <p>Radar Arduino Project</p>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/roheetsaha7_iot-arduino-aqimonitoring-activity-7338041115020795906-i9JI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEWNgnoB7gRxSHKET1uErmNh-8iDYZRF93k" target="_blank" class="project-card">
+          <img src="Aiq.jpg" alt="AQI Monitoring Project">
+          <p>AQI Monitoring System</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Popup -->
+  <div id="contactPopup" class="contact-popup">
+    <div class="contact-popup-content">
+      <span class="close-btn" onclick="closeContact()">&times;</span>
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-phone-alt contact-icon"></i> <strong>Phone:</strong> 9064004743</p>
+      <p><i class="fab fa-whatsapp contact-icon"></i> <strong>WhatsApp:</strong> 8509311748</p>
+      <p><i class="fas fa-envelope contact-icon"></i> <strong>Email:</strong> roheetsaha2955@gmail.com</p>
+
+      <h3 class="work-heading">Let's Work Together</h3>
+      <div class="quote">
+        "Looking forward to connecting, collaborating, and creating something amazing together!"
+      </div>
+    </div>
+  </div>
+
+  <!-- About Popup -->
+  <div id="aboutPopup" class="about-popup">
+    <div class="about-popup-content-modern">
+      <span class="close-btn" onclick="closeAbout()">&times;</span>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="section-group">
+        <h3>🎓 Education</h3>
+        <ul>
+          <li><strong>B.Tech - ECE</strong>, VIT Vellore (2022–2026)</li>
+          <li><strong>Higher Secondary (ISC)</strong>, Salt Lake Point School (84%)</li>
+          <li><strong>Secondary (ICSE)</strong>, Bishop Morrow School (90.8%)</li>
+        </ul>
+      </div>
+
+      <div class="section-group">
+        <h3>📜 Certifications</h3>
+        <ul>
+          <li>ChatGPT Fundamentals – GUVI, IITM RP (2024)</li>
+          <li>Game Dev with Pygame – GUVI, IITM (2024)</li>
+          <li>Advanced Python – GUVI, IITM RP (2024)</li>
+          <li>C++ Programming – VIT (2023)</li>
+          <li>Forest Management – NPTEL, IIT Kanpur (Score: 90/100)</li>
+        </ul>
+      </div>
+
+      <div class="section-group">
+        <h3>💻 Technical Skills</h3>
+        <ul>
+          <li><strong>Languages:</strong> Python, Java, C, HTML, CSS, JavaScript, SQL</li>
+          <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Eclipse, AWS Educate</li>
+          <li><strong>Software:</strong> MATLAB, COMSOL, KEIL, ModelSim, NetSim, Arduino IDE</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Initialize particles.js
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#00f7ff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00f7ff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    const text = "Roheet Saha";
+    const typingTarget = document.getElementById("typing");
+    let i = 0;
+    const speed = 150;
+    function typeWriter() {
+      if (i < text.length) {
+        typingTarget.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else {
+        typingTarget.style.borderRight = "none";
+      }
+    }
+    window.onload = typeWriter;
+    
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+    
+    function openContact() {
+      document.getElementById("contactPopup").style.display = "flex";
+      document.getElementById("navbar").classList.remove("active");
+    }
+    function closeContact() {
+      document.getElementById("contactPopup").style.display = "none";
+    }
+    function openAbout() {
+      document.getElementById("aboutPopup").style.display = "flex";
+      document.getElementById("navbar").classList.remove("active");
+    }
+    function closeAbout() {
+      document.getElementById("aboutPopup").style.display = "none";
+    }
+    function openServicesPopup() {
+      document.getElementById("servicesPopup").style.display = "flex";
+      document.getElementById("navbar").classList.remove("active");
+    }
+    function closeServicesPopup() {
+      document.getElementById("servicesPopup").style.display = "none";
+    }
+    function openWorkPopup() {
+      document.getElementById("workPopup").style.display = "flex";
+      document.getElementById("navbar").classList.remove("active");
+    }
+    function closeWorkPopup() {
+      document.getElementById("workPopup").style.display = "none";
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navbar = document.getElementById("navbar");
+      const menuToggle = document.querySelector('.menu-toggle');
+      if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
+        navbar.classList.remove("active");
+      }
+    });
+
+    // Add scroll animation
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-top, .animate-right, .animate-bottom, .animate-zoom, .animate-pop').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
